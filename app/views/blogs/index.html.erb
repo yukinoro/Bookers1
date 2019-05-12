@@ -21,13 +21,13 @@
 			<td class="blog-text-headline"><%= blog.title %></td>
 			<td class="blog-text"><%= blog.body %></td>
 			<td>
-				<%= link_to "show", blog_path(blog),class:"show_#{blog.id}" %>
+				<%= link_to "show", blog_path(blog),class: "show_#{blog.id}" %>
 			</td>
 			<td>
-				<%= link_to "Edit", edit_blog_path(blog),class:"edit_#{blog.id}" %>
+				<%= link_to "Edit", edit_blog_path(blog),class: "edit_#{blog.id}" %>
 			</td>
 			<td>
-				<%= link_to "Destroy", blog_path(blog.id), method: :delete,class:"destroy_#{blog.id}" %>
+				<%= link_to "Destroy", blog_path(blog.id), method: :delete,class: "destroy_#{blog.id}" %>
 			</td>
 				
 		</tr>
