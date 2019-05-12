@@ -1,0 +1,19 @@
+<body>
+	<div class="notice">
+	<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+		
+	</div>
+	<p>
+		<strong>Title:</strong>
+		<%= @blog.title %>
+	</p>
+	<p>
+		<strong>Body:</strong>
+		<%= @blog.body %>
+	</p>
+	<%= link_to "Edit", edit_blog_path(@blog) %>
+	<a>|</a>
+	<%= link_to "Back", blogs_path %>
+</body>
