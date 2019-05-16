@@ -13,7 +13,7 @@
 		<strong>Body:</strong>
 		<%= @blog.body %>
 	</p>
-	<%= link_to "Edit", edit_blog_path(@blog) %>
+	<%= link_to "Edit", edit_blog_path(@blog) ,class: "edit_#{@blog.id}" %>
 	<a>|</a>
-	<%= link_to "Back", blogs_path %>
+	<%= link_to "Back", blogs_path, class: "back" %>
 </body>
